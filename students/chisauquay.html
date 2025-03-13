@@ -13,11 +13,16 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f8f9fa;
             margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
         }
 
         header {
             background: linear-gradient(135deg, rgba(111, 66, 193, 0.8), rgba(0, 123, 255, 0.8)), url('/assets/images/background.jpg') no-repeat center center/cover;
+            background: linear-gradient(135deg, rgba(111, 66, 193, 0.8), rgba(0, 123, 255, 0.8)), url('/assets/images/background.jpg') no-repeat center center/cover;
             color: white;
+            padding: 100px 0;
             padding: 100px 0;
         }
 
@@ -33,6 +38,7 @@
             position: relative;
             display: inline-block;
             margin-bottom: 20px;
+            color: #343a40;
             color: #343a40;
         }
 
@@ -88,6 +94,33 @@
         .icon {
             margin-right: 5px;
         }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #007bff;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -112,6 +145,7 @@
     
     <!-- Thông tin cá nhân -->
     <header class="text-center">
+    <header class="text-center">
         <div class="container">
             <img src="/assets/images/hinhthe.jpg" class="rounded-circle" width="150" alt="Chí Sau Quay">
             <h1 class="mt-3">Chí Sau Quay</h1>
@@ -128,6 +162,9 @@
             <ul class="list-unstyled">
                 <li class="mb-3"><strong>Đại học HUTECH (2021 - 2025)</strong>: Ngành Công Nghệ Thông tin</li>
                 <li class="mb-3"><strong>Các môn quan trọng:</strong> Lập trình Web, Cấu trúc dữ liệu & Giải thuật, Phát triển phần mềm</li>
+            <ul class="list-unstyled">
+                <li class="mb-3"><strong>Đại học HUTECH (2021 - 2025)</strong>: Ngành Công Nghệ Thông tin</li>
+                <li class="mb-3"><strong>Các môn quan trọng:</strong> Lập trình Web, Cấu trúc dữ liệu & Giải thuật, Phát triển phần mềm</li>
                 <li><strong>Dự án tiêu biểu:</strong> Xây dựng hệ thống quản lý sinh viên với Spring Boot</li>
             </ul>
         </div>
@@ -137,6 +174,26 @@
     <section id="skills" class="bg-light py-5 section">
         <div class="container">
             <h2 class="text-center">Kỹ năng</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Ngôn ngữ lập trình</h5>
+                        <p>C#, Java, JavaScript, HTML/CSS</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Frameworks</h5>
+                        <p>Spring Boot, ReactJS, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Thiết kế UI/UX</h5>
+                        <p>Figma, Adobe XD</p>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card p-3">
@@ -164,6 +221,20 @@
     <section id="projects" class="py-5 section">
         <div class="container">
             <h2 class="text-center">Dự án cá nhân</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-3 mb-4">
+                        <h5>Website bán hàng</h5>
+                        <p>Xây dựng bằng Spring Boot & Thymeleaf</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 mb-4">
+                        <h5>Ứng dụng quản lý công việc</h5>
+                        <p>ReactJS + Firebase</p>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card p-3 mb-4">
